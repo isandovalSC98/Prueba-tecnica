@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    padding: 100px 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px;
+    width: 600px;
+    background-color: #fff;
+}
+
+#titulo {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.boton {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnGuardar {
+    background-color: #1aab8a;
+    border-color: #1aab8a;
+    padding: 6px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 3px;
+    width: 60%;
+}
