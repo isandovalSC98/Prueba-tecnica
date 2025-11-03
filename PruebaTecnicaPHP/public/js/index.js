@@ -11,7 +11,7 @@
         }else{
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost/MVC/index.php?accion=obtenerSucursalPorId',
+                url: 'http://localhost/PruebaTecnicaPHP/index.php?accion=obtenerSucursalPorId',
                 data: {id_bodega: bodega},
                 dataType: 'json',
                 success: function (data) {
@@ -111,7 +111,7 @@
                                         
                                         $.ajax({
                                         type: 'POST',
-                                        url: 'http://localhost/MVC/index.php?accion=validaCodigoExistente',
+                                        url: 'http://localhost/PruebaTecnicaPHP/index.php?accion=validaCodigoExistente',
                                         data: {codigo: codigo},
                                         dataType: 'json',
                                             success: function (data) {
@@ -122,7 +122,7 @@
                                                     
                                                     $.ajax({
                                                     type: 'POST',
-                                                    url: 'http://localhost/MVC/index.php?accion=envioDatos',
+                                                    url: 'http://localhost/PruebaTecnicaPHP/index.php?accion=envioDatos',
                                                     data: {codigo: codigo, nombre: nombre, bodega: bodega, sucursal: sucursal, moneda: moneda, precio: precio, descripcion: descripcion},
                                                     dataType: 'json',
                                                         success: function (data) {
@@ -153,3 +153,4 @@
         }
 
     });
+
